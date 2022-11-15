@@ -1,6 +1,6 @@
 # PARTNR
 
-This is the repository that contains source code for the [PARTNR website](https://partnr.github.io).
+This is the repository that contains source code for the [PARTNR website](https://partnr-learn.github.io).
 
 If you find PARTNR useful for your work please cite:
 ```
