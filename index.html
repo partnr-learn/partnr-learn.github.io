@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="PARTNR: Pick and place Ambiguity Resolving by Trustworthy iNteractive leaRning">
+  <meta name="keywords" content="Pick and Place, Behavioral Cloning, Ambiguity, Interactive Learning">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PARTNR</title>
+
+  <!--TODO: add Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script> -->
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://keunhong.com">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://github.com/eager-dev/eagerx">
+            EAGERx
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">PARTNR: Pick and place Ambiguity Resolving by Trustworthy iNteractive leaRning</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/jelle-luijkx">Jelle Luijkx</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/zlatanajanovic">Zlatan Ajanovi&#263;</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://r2clab.com/">Laura Ferranti</a>,
+            </span>
+            <span class="author-block">
+              <a href="http://jenskober.de">Jens Kober</a>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Delft University of Technology</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a[hidden] href="TODO"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper (coming soon)</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a[hidden] href="TODO"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv (coming soon)</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a[hidden] href="TODO"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video (coming soon)</span>
+                </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="content has-text-centered">
+         <video id="partnr-video"
+                controls
+                muted
+                autoplay
+                loop
+                width="40%">
+           <source src="https://partnr.github.io/static/videos/partnr.mp4" type="video/mp4"/>
+           <!-- <source src="static/videos/partnr_rescale.mp4" type="video/mp4"> -->
+         </video>
+         <p>
+           Evaluation of PARTNR in a table-top pick and place task.
+           <br>
+           In this setting, PARTNR improved the baseline success rate (</span class="dpartnr">CLIPort</span> variant) from 82.7% to 91.0%.
+         </p>
+       </div>
+      <h2 class="subtitle has-text-centered">
+        <span class="dpartnr">PARTNR</span> learns to solve ambiguities in pick and place problems through interactive learning.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Several recent works show impressive results in mapping language-based human commands and image scene observations
+            to direct robot executable policies (e.g., pick and place poses).
+            However, these approaches do not consider the uncertainty of the trained policy and simply always execute actions
+            suggested by the current policy as the most probable ones.
+            This makes them vulnerable to domain shift and inefficient in the number of required demonstrations.
+          </p>
+          <p>
+            We extend previous works and present the PARTNR algorithm that can detect ambiguities in the trained policy by
+            analyzing multiple modalities in the pick and place poses using topological analysis.
+            PARTNR employs an adaptive, sensitivity-based, gating function that decides if additional user demonstrations are
+            required.
+            User demonstrations are aggregated to the dataset and used for subsequent training.
+            In this way, the policy can adapt promptly to domain shift and it can minimize the number of required demonstrations
+            for a well-trained policy.
+            The adaptive threshold enables to achieve the user-acceptable level of ambiguity to execute the policy autonomously
+            and in turn, increase the trustworthiness of our system.
+          </p>
+          <p>
+            We demonstrate the performance of PARTNR in a table-top pick and place task.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video (coming soon)</h2>
+        <div class="publication-video">
+          <iframe[hidden] src="TODO"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-widescreen">
+
+    <div class="rows">
+
+      <!-- PARTNR. -->
+      <div class="rows is-centered">
+        <div class="row is-full-width">
+          <h2 class="title is-3"><span class="dpartnr">PARTNR</span></h2>
+        </div>
+      </div>
+      <div class="content has-text-justified">
+        <p>
+          PARTNR is an interactive imitation learning algorithm that asks the human to take over control in case it considers
+          the situation to be ambiguous.
+          The situation is ambiguous when the learned policy does not provide a single dominant solution, i.e., there are
+          multiple local maxima with close values in the action space.
+          User demonstrations are aggregated to the dataset &Dscr; and used for subsequent training.
+          The robot observes, at each execution step, a human-provided natural language command and the state of the environment
+          (e.g., a top-view image of the table).
+          Based on the observation, the policy provides the heatmap, representing the value of the action.
+          The heatmap is then analyzed to detect multiple local maxima (in <span class="dpartnr">TopAnalysis</span>).
+          In this work, we rely on computational topology methods for finding local maxima, specifically we use a persistent
+          homology method.
+          Then, in <span class="dpartnr">AmbiguityMeasure</span>, the obtained corresponding values of the local maxima
+          <strong>T</strong>, are normalized using the <span class="dpartnr">softmax</span> function and the maximum value is
+          then used to decide if the situation is ambiguous.
+          If <span class="dpartnr">AmbiguityMeasure(<strong>T</strong>)</span> is smaller than a threshold value, the situation is ambiguous.
+          In case the situation is ambiguous, the robot is not executing the policy but queries the human teacher.
+          The threshold is updated continuously, at every step, by function <span class="dpartnr">UpdateThreshold</span>, to
+          satisfy a user defined sensitivity value.
+          Whenever there is a teacher input, the data is aggregated and the policy is updated using the function
+          <span class="dpartnr">Train</span>.
+        </p>
+      </div>
+      <img src="static/images/partnr.png" class="interpolation-image" alt="Interpolate start reference image."/>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Acknowledgements</h2>
+    <p>
+      This work was supported by the European Union’s H2020 project Open Deep Learning Toolkit for Robotics (OpenDR) under grant
+      agreement #871449 and by the ERC Stg TERI, project reference #804907.
+    </p>
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{Luijkx2022partnr,
+  author    = {Luijkx, Jelle and Ajanovi{\'c}, Zlatan and Ferranti, Laura and Kober, Jens},
+  title     = {{PARTNR: Pick and place Ambiguity Resolving by Trustworthy iNteractive leaRning}},
+  booktitle = {{5th NeurIPS Robot Learning Workshop: Trustworthy Robotics}},
+  year      = {2022},
+}
+  </code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content has-text-centered">
+          <p>
+            Website template borrowed from <a href="https://github.com/nerfies/nerfies.github.io">NeRFies</a> made by the amazing <a href="https://keunhong.com/">Keunhong Park</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
